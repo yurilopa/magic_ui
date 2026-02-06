@@ -54,7 +54,7 @@ def test_text_multirange_max_is(all_page_text):
 
 
 def test_text_dropdown_is(desk1_page_text):
-    """Тест: текст place holdera search window Error AssertionError: Ожидали 'Search...', получили '' """
+    """Тест: текст Benelux"""
     desk1_page_text.open_page()
     desk1_page_text.check_dropdown_is('Benelux')
 
