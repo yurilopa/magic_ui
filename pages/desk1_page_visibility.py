@@ -96,7 +96,7 @@ class Desk1PageVisibility(BasePage):
         multiple = wait.until(
             EC.visibility_of_element_located(loc.PRICE_RANGE_SLIDER)
         )
-        print(f"Найден элемент: {multiple}")  # Для отладки
+        # print(f"Найден элемент: {multiple}")  # Для отладки
         assert multiple.is_displayed(), "multirange-max не отображается!"
 
 
@@ -104,7 +104,7 @@ class Desk1PageVisibility(BasePage):
     def check_view_search_win(self):
         wait = WebDriverWait(self.driver, 15)
         search = wait.until(EC.visibility_of_element_located(loc.SEARCH_WIN))
-        print(f"Найден элемент: {search}")
+        # print(f"Найден элемент: {search}") # Для отладки
         assert search.is_displayed(), "Строка поиска не найдена на странице!"
 
 
@@ -136,7 +136,7 @@ class Desk1PageVisibility(BasePage):
     def check_view_grid(self):
         wait = WebDriverWait(self.driver, 15)
         grid = wait.until(EC.visibility_of_element_located(loc.GRID))
-        print(f"Найден элемент: {grid}")
+        # print(f"Найден элемент: {grid}") # Для отладки
         assert grid.is_displayed(), "Кнопка grid найдена на странице!"
 
 
@@ -144,7 +144,7 @@ class Desk1PageVisibility(BasePage):
     def check_view_list(self):
         wait = WebDriverWait(self.driver, 15)
         grid = wait.until(EC.visibility_of_element_located(loc.LIST))
-        print(f"Найден элемент: {grid}")
+        # print(f"Найден элемент: {grid}") # Для отладки
         assert grid.is_displayed(), "Кнопка grid найдена на странице!"
 
 

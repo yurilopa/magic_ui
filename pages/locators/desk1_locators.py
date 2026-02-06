@@ -61,9 +61,9 @@ class Desk1Locators:
     SEARCH_BTN = (By.CSS_SELECTOR,
                   'button[type="submit"].oe_search_button.btn.btn-light')
 
-    """Локатор для поиска Бенилюкс на странице"""
+    """Локатор для поиска левого (с Бенилюкс) Dropdown_BTN на странице"""
     DROPDOWN_BTN = (By.XPATH,
-                    "//a[@role='button' and text()='Benelux']")
+                    "//a[@role='button' and normalize-space()='Benelux']")
 
     """Локатор для title Sort By:"""
     SORT_BY = (

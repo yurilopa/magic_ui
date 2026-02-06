@@ -7,13 +7,13 @@ class CartLocators:
 
     # === ЛОКАТОРЫ MAIN CONTENT ===
     """Локатор для поиска REVIEW_ORDER_LABEL"""
-    REVIEW_ORDER_LABEL = (By.XPATH, "//p[text()='Review Order']")
+    REVIEW_ORDER_LABEL = (By.XPATH, "//p[normalize-space()='Review Order']")
 
     """Локатор для поиска Shipping"""
-    SHIPPING_LABEL = (By.XPATH, "//p[text()='Shipping']")
+    SHIPPING_LABEL = (By.XPATH, "//p[normalize-space()='Shipping']")
 
     """Локатор для поиска Payment"""
-    PAYMENT_LABEL = (By.XPATH, "//p[text()='Payment']")
+    PAYMENT_LABEL = (By.XPATH, "//p[normalize-space()='Payment']")
 
     """Локатор для поиска ORDER_OVERVIEW"""
     TITLE_ORDER_OVERVIEW = (By.CLASS_NAME, 'mb-4')

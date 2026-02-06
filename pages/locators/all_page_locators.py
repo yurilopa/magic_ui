@@ -23,5 +23,5 @@ class AllPageLocators:
 
     # === ЛОКАТОРЫ FOOTER ===
     COPYRIGHT = (By.XPATH, "//*[contains(text(), 'Copyright')]")
-    ABOUT_US = (By.XPATH, "//h5[text()='About us']")
+    ABOUT_US = (By.XPATH, "//h5[normalize-space()='About us']")
     POWERED_BY_ODOO = (By.XPATH, "//*[contains(text(), 'Powered by')]")

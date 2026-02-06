@@ -9,7 +9,7 @@ class SoftwareLocators:
     SEARCH_WIN = (By.CSS_SELECTOR, 'input[type="search"]:not(.rounded-start-pill)')
 
     """Локатор для поиска Dropdown Бенилюкс на странице"""
-    DROPDOWN_BTN = (By.XPATH, "//a[@role='button' and text()='Benelux']")
+    DROPDOWN_BTN = (By.XPATH, "//a[@role='button' and normalize-space()='Benelux']")
 
     """Локатор для поиска ALL PRODUCT"""
     ALL_PRODUCT = (By.CSS_SELECTOR, 'a[href="/shop"]')
