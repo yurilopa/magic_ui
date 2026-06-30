@@ -1,1 +1,12 @@
+name: Run Tests
 
+on: [push]
+
+jobs:
+  runs-on: ubuntu-latest
+  name: Run autotests
+  steps: 
+    - name: Checkout autotests
+      uses: actions/checkout@v4
+    - name: Set up Python enviroment
+      uses: actions/setup-python@v5
