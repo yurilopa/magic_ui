@@ -19,6 +19,7 @@ def driver():
     options.add_argument("--headless")  # для запуска на сервере
     options.add_argument("--no-sandbox")  # для запуска на сервере
     options.add_argument("--disable-dev-shm-usage")  # для запуска на сервере
+    options.add_argument("--window-size=1920,1080")  # для запуска на сервере ДОБАВЛЕНО: фиксированный размер окна
     chrome_driver = webdriver.Chrome(options=options)  # для запуска на сервере
     # chrome_driver = webdriver.Chrome()  # для запуска in pycharm
     # sleep(3)  # для запуска in pycharm
