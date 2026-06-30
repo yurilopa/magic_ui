@@ -2,7 +2,7 @@
 def test_search_view(office_software_visibility):
     """Тест: кнопка search видна"""
     office_software_visibility.open_page()
-    office_software_visibility.check_view_search_button()
+    office_software_visibility.check_view_search_win()
 
 
 def test_benelux_view(office_software_visibility):
@@ -32,7 +32,7 @@ def test_title_design_software_view(office_software_visibility):
 def test_product_details_view(office_software_visibility):
     """Тест: блок Product details виден"""
     office_software_visibility.open_page()
-    office_software_visibility.check_view_products_details()
+    office_software_visibility.check_view_product_details()
 
 
 def test_h1_product_details_view(office_software_visibility):
